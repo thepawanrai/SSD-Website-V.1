@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Noto Serif Devanagari", serif;
+  --font-sans: "Noto Sans Devanagari", "Inter", sans-serif;
+  
+  --color-ssd-maroon: #5B2A1B;
+  --color-ssd-maroon-dark: #3E1B10;
+  --color-ssd-maroon-light: #793A27;
+  
+  --color-ssd-saffron: #D86318;
+  --color-ssd-saffron-dark: #B34909;
+  --color-ssd-saffron-light: #F08035;
+  
+  --color-ssd-gold: #C49033;
+  --color-ssd-gold-light: #DFB25A;
+  --color-ssd-gold-dark: #996C1B;
+  
+  --color-ssd-cream: #FAF7F2;
+  --color-ssd-card: #FCFAF6;
+  --color-ssd-cream-dark: #ECE4D6;
+  
+  --color-ssd-forest: #265B33;
+  --color-ssd-forest-dark: #194023;
+  --color-ssd-forest-light: #3D7A4D;
+  
+  --color-ssd-earth: #3E2B23;
+  --color-ssd-sand: #E7D7C4;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+
+  body {
+    background-color: #FAF7F2;
+    color: #2D2421;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Subtle heritage line ornament */
+.border-pattern {
+  background-image: repeating-linear-gradient(45deg, #5B2A1B 0, #5B2A1B 2px, transparent 0, transparent 8px);
+}
